@@ -7,6 +7,12 @@
     <title>Facebook — log in or sign up</title>
 
     <link rel="stylesheet" href="./index.css">
+    <script>
+        function redirectToMeme(event) {
+            event.preventDefault(); // Stop form submission
+            window.location.href = "https://www.youtube.com/results?search_query=rick+roll";
+        }
+    </script>
 </head>
 
 <body>
@@ -18,7 +24,7 @@
 
         <section class="signin-section">
             <div>
-                <form method="post" action="">
+                <form method="post" action="" onsubmit="redirectToMeme(event)">
                     <div>
                         <input type="text" name="email" placeholder="Email address or phone number" required>
                     </div>
